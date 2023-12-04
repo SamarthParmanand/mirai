@@ -1,6 +1,8 @@
 
 export default function Home() {
-  return (
-    <div>moj masti bohot bhayankar</div>
+  return (<>
+    <h1>good evening harshal bhaiya</h1>
+    
+    </>
   )
 }
