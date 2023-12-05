@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={josefin.className}>
+      <body className={`${josefin.className}`}>
         <NavBar />
         {children}
       </body>
