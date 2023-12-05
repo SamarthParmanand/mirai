@@ -8,13 +8,18 @@ const Hero = () => {
   useEffect(() => {
     gsap.fromTo(
       "#hero-section",
-      { opacity: 0, scale: 0.75, y: -10 },
-      { opacity: 1, scale: 1, y: 0, duration: 0.75 }
+      { opacity: 0, scale: 0.75 },
+      { opacity: 1, scale: 1, duration: 1 }
     );
     gsap.fromTo(
       ".hero-text",
       { x: -100 },
-      { x: 0, duration: 1, stagger: { amount: 0.25, from: "end" } }
+      {
+        x: 0,
+        duration: 1.5,
+        ease: "expo.inOut",
+        stagger: { amount: 0.25, from: "end" },
+      }
     );
   }, []);
 
