@@ -77,14 +77,14 @@
 
 @font-face {
     font-family: "The Seasons";
-    src: url("/fonts/theseasons-bd.woff2") format("woff2"),
-      url("/fonts/theseasons-bd.woff") format("woff");
+    src: url("/Fonts/theseasons-bd.woff2") format("woff2"),
+      url("/Fonts/theseasons-bd.woff") format("woff");
   }
   
   @font-face {
     font-family: "The Seasons Italics";
-    src: url("/fonts/theseasons-it.woff2") format("woff2"),
-      url("/fonts/theseasons-it.woff") format("woff");
+    src: url("/Fonts/theseasons-it.woff2") format("woff2"),
+      url("/Fonts/theseasons-it.woff") format("woff");
   }
   
   body{
