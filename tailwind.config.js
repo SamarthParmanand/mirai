@@ -20,6 +20,10 @@ module.exports = {
       },
     },
     extend: {
+      lineHeight: {
+        "extra-loose": "2.5",
+        12: "3rem",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

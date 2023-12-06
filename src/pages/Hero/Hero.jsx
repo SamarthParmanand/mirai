@@ -16,7 +16,7 @@ const Hero = () => {
       { x: -100 },
       {
         x: 0,
-        duration: 1.5,
+        duration: 1.65,
         ease: "expo.inOut",
         stagger: { amount: 0.25, from: "end" },
       }
@@ -27,28 +27,24 @@ const Hero = () => {
     <>
       <div
         id="hero-section"
-        className={`${classes.heroBG} flex flex-col lg:flex-row md:flex-row justify-center items-center relative text-white `}
+        className={`${classes.heroBG} flex flex-col lg:flex-row md:flex-row justify-center items-center relative text-white`}
       >
         <span
-          id="where"
           className={`font-seasons py-4 lg:px-4 md:px-4 text-4xl lg:text-7xl md:text-5xl relative z-10 hero-text`}
         >
           Where
         </span>
         <span
-          id="design"
           className={`font-seasonsItalics lg:pr-2 md:pr-2 text-5xl lg:text-8xl md:text-6xl relative z-10 hero-text`}
         >
           Design
         </span>
         <span
-          id="becomes"
           className={`font-seasons py-4 lg:px-4 md:px-4 text-4xl lg:text-7xl md:text-5xl relative z-10 hero-text`}
         >
           Becomes
         </span>
         <span
-          id="destiny"
           className={`font-seasonsItalics lg:pr-2 md:pr-2 text-5xl lg:text-8xl md:text-6xl relative z-10 hero-text`}
         >
           Destiny

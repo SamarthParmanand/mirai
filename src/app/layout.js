@@ -1,14 +1,5 @@
-import { Inter } from 'next/font/google'
-import { Josefin_Sans } from 'next/font/google'
 import './globals.css'
 import NavBar from '@/components/NavBar'
-
-const inter = Inter({ subsets: ['latin'] })
-const josefin = Josefin_Sans({
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-})
 
 export const metadata = {
   title: 'Mirai Design Studio',
@@ -18,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${josefin.className}`} suppressHydrationWarning={true}>
+      <body className={`font-seasons`} suppressHydrationWarning={true}>
         <NavBar />
         {children}
       </body>
