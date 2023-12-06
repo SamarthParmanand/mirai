@@ -24,6 +24,12 @@ module.exports = {
         "extra-loose": "2.5",
         12: "3rem",
       },
+      brightness: {
+        25: '.25',
+        30: '.3',
+        40: '.4',
+        70: '.7'
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

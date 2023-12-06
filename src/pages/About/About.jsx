@@ -42,36 +42,36 @@ const About = () => {
         // markers: true,
       },
     });
-    aboutTl
-      .fromTo(
-        "#about-mirai",
-        {
-          y: 150,
-          ease: "ease.out",
-          delay: 1,
-          scale: 0.7,
-          opacity: 0,
-        },
-        {
-          y: 50,
-          scale: 1,
-          opacity: 1,
-          stagger: 0.1,
-        }
-      )
-      .fromTo(
-        "#about-img",
-        {
-          y: 100,
-          opacity: 0.7,
-          ease: "ease.out",
-        },
-        {
-          y: 50,
-          opacity: 1,
-          stagger: 0.1,
-        }
-      );
+    aboutTl.fromTo(
+      "#about-mirai",
+      {
+        y: 150,
+        ease: "ease.out",
+        delay: 1,
+        scale: 0.7,
+        opacity: 0,
+      },
+      {
+        y: 50,
+        scale: 1,
+        opacity: 1,
+        stagger: 0.1,
+      }
+    );
+    aboutTl.fromTo(
+      "#about-img",
+      {
+        y: 100,
+        delay: 1,
+        opacity: 0.7,
+        ease: "ease.out",
+      },
+      {
+        y: 50,
+        opacity: 1,
+        stagger: 0.1,
+      }
+    );
   }, []);
 
   return (

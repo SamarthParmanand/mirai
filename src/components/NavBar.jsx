@@ -75,7 +75,7 @@ const NavBar = () => {
   return (
     <Headroom>
       <nav
-        className={`${josefin.className} border-gray-200 px-8 sticky top-0 z-10 backdrop-blur-lg`}
+        className={`${josefin.className} border-gray-200 px-8 sticky top-0 z-100 backdrop-blur-lg`}
         id="navbar"
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
