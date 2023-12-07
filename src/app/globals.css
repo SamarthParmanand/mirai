@@ -83,8 +83,8 @@
   
   @font-face {
     font-family: "The Seasons Italics";
-    src: url("/Fonts/theseasons-it.woff2") format("woff2"),
-      url("/Fonts/theseasons-it.woff") format("woff");
+    src: url("/Fonts/theseasons-bdit.woff2") format("woff2"),
+      url("/Fonts/theseasons-bdit.woff") format("woff");
   }
   
   body{
