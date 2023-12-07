@@ -53,21 +53,6 @@ const NavBar = () => {
     }
   }, [pathname]);
 
-  const handleHamburgerClick = () => {
-    gsap.fromTo(
-      ".sheet-links",
-      {
-        opacity: 0,
-        y: -200,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1.25,
-        stagger: { amount: 0.35 },
-      }
-    );
-  };
 
   if (pathname.startsWith("/studio")) {
     return null;
@@ -93,7 +78,6 @@ const NavBar = () => {
               <button
                 type="button"
                 className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden md:hidden"
-                onClick={handleHamburgerClick}
               >
                 <Menu className="text-white" />
               </button>
