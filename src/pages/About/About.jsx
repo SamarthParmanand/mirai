@@ -17,6 +17,7 @@ const About = () => {
         start: "top 50%",
         end: "bottom 95%",
         scrub: 2,
+        once: true,
         // markers: true,
       },
     });
@@ -39,6 +40,7 @@ const About = () => {
         start: "top 90%",
         end: "bottom 99%",
         scrub: 2,
+        once: true,
         // markers: true,
       },
     });

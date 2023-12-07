@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import Link from "next/link.js";
+
 import {
   floater1,
   floater2,
@@ -26,25 +28,25 @@ const Projects = () => {
     gsap.set(plane1.current, {
       x: `+=${movementX * 0.015}`,
       y: `+=${movementY * 0.015}`,
-      ease: 'power4.in'
+      ease: "power4.in",
     });
-    
+
     gsap.set(plane2.current, {
       x: `+=${movementX * 0.012}`,
       y: `+=${movementY * 0.012}`,
-      ease: 'power4.in'
+      ease: "power4.in",
     });
-    
+
     gsap.set(plane3.current, {
       x: `+=${movementX * 0.02}`,
       y: `+=${movementY * 0.02}`,
-      ease: 'power4.in'
+      ease: "power4.in",
     });
   };
 
   return (
     <div
-      className="relative h-[90vh] lg:h-[125vh] my-[5%] w-[100vw] z-1 overflow-hidden"
+      className="relative h-[80vh] lg:h-[125vh] lg:my-[5%] w-[100vw] z-1 overflow-hidden"
       onMouseMove={(e) => handleMouseMove(e)}
       id="projects"
     >
@@ -56,22 +58,22 @@ const Projects = () => {
         <Image
           src={floater1}
           alt="floater1"
-          className="absolute brightness-50 left-[60%] lg:left-[77%] top-[60%] lg:top-[49%] w-[95px] lg:w-[285px]"
+          className="absolute brightness-50 left-[65%] lg:left-[17%] top-[50%] lg:top-[17%] w-[95px] lg:w-[285px]"
         />
         <Image
           src={floater2}
           alt="floater2"
-          className="absolute brightness-50 left-2 lg:left-[12%] top-[54%] lg:top-[45%] w-[100px] lg:w-[300px] "
+          className="absolute brightness-50 left-[10%] lg:left-[15%] top-[54%] lg:top-[45%] w-[100px] lg:w-[300px] "
         />
         <Image
           src={floater3}
           alt="floater3"
-          className="absolute brightness-50 left-[40%] lg:left-[72%] top-[25%] lg:top-[11%] w-[100px] lg:w-[300px]"
+          className="absolute brightness-50 left-[35%] lg:left-[72%] top-[23%] lg:top-[11%] w-[100px] lg:w-[300px]"
         />
         <Image
           src={floater4}
           alt="floater4"
-          className="absolute brightness-50 left-[7%] lg:left-[30%] top-[28%] lg:top-[0%] w-[85px] lg:w-[275px]"
+          className="absolute brightness-50 left-[7%] lg:left-[40%] top-[35%] lg:top-[0%] w-[85px] lg:w-[275px]"
         />
       </div>
       <div
@@ -82,17 +84,17 @@ const Projects = () => {
         <Image
           src={floater5}
           alt="floater5"
-          className="absolute brightness-40 -left-5 lg:left-[25%] top-[60%] lg:top-[55%] w-[110px] lg:w-[325px]"
+          className="absolute brightness-40 -left-0 lg:left-[28%] top-[20%] lg:top-[51%] w-[110px] lg:w-[325px]"
         />
         <Image
           src={floater6}
           alt="floater6"
-          className="absolute brightness-40 left-[50%] top-[26%] lg:top-[7%] w-[100px] lg:w-[280px]"
+          className="absolute brightness-40 left-[62%] lg:left-[55%] top-[30%] lg:top-[7%] w-[100px] lg:w-[280px]"
         />
         <Image
           src={floater7}
           alt="floater7"
-          className="absolute brightness-40 left-[19%] lg:left-[43%] top-[67%] lg:top-[50%] w-[100px] lg:w-[300px]"
+          className="absolute brightness-40 left-[27%] lg:left-[46%] top-[58%] lg:top-[45%] w-[100px] lg:w-[300px]"
         />
       </div>
       <div
@@ -103,17 +105,17 @@ const Projects = () => {
         <Image
           src={floater8}
           alt="floater8"
-          className="absolute brightness-40 left-[0%] lg:left-[58%] top-[52%] lg:top-[58%] w-[95px] lg:w-[285px]"
+          className="absolute brightness-40 left-[40%] lg:left-[63%] top-[53%] lg:top-[53%] w-[95px] lg:w-[285px]"
         />
         <Image
           src={floater9}
           alt="floater9"
-          className="absolute brightness-40 -left-[7%] lg:left-[65%] top-[10%] lg:top-[35%] w-[100px] lg:w-[300px]"
+          className="absolute brightness-40 left-[15%] lg:left-[65%] top-[10%] lg:top-[35%] w-[100px] lg:w-[300px]"
         />
         <Image
           src={floater10}
           alt="floater10"
-          className="absolute brightness-40 left-[40%] lg:left-[15%] top-[11%] lg:top-[12%] w-[90px] lg:w-[275px]"
+          className="absolute brightness-40 left-[59%] lg:left-[28%] top-[13%] lg:top-[5%] w-[90px] lg:w-[275px]"
         />
       </div>
       <div className="absolute top-[45%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex flex-col justify-center items-center">
@@ -124,7 +126,7 @@ const Projects = () => {
           </span>
         </h1>
         <button className="h-8 w-24 lg:h-16 lg:w-40 text-black bg-white rounded-md m-2 lg:m-5 text-sm lg:text-xl">
-          View More
+          <Link href="/projects">View More</Link>
         </button>
       </div>
     </div>

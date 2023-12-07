@@ -22,33 +22,36 @@ const josefin = Josefin_Sans({
 });
 
 const NavBar = () => {
+  const pathname = usePathname();
   useEffect(() => {
-    gsap.fromTo(
-      "#navbar",
-      {
-        opacity: 0,
-        y: -200,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-      }
-    );
-    gsap.fromTo(
-      ".link-elements",
-      {
-        opacity: 0,
-        y: -200,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1.25,
-        stagger: { amount: 0.35 },
-      }
-    );
-  }, []);
+    if (pathname === "/" || pathname.startsWith("/projects")) {
+      gsap.fromTo(
+        "#navbar",
+        {
+          opacity: 0,
+          y: -200,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+        }
+      );
+      gsap.fromTo(
+        ".link-elements",
+        {
+          opacity: 0,
+          y: -200,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1.25,
+          stagger: { amount: 0.35 },
+        }
+      );
+    }
+  }, [pathname]);
 
   const handleHamburgerClick = () => {
     gsap.fromTo(
@@ -65,8 +68,6 @@ const NavBar = () => {
       }
     );
   };
-
-  const pathname = usePathname();
 
   if (pathname.startsWith("/studio")) {
     return null;
@@ -103,7 +104,7 @@ const NavBar = () => {
               </SheetHeader>
               <div>
                 <div className="block py-2 px-3 text-white text-xl sheet-links">
-                  <Link href="#">Home</Link>
+                  <Link href="">Home</Link>
                 </div>
                 <div className="block py-2 px-3 text-white text-xl sheet-links">
                   <Link href="/about">About</Link>

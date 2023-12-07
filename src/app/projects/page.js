@@ -9,8 +9,6 @@ const page = async () => {
     groq`*[_type == 'project']{ _id, name, description, slug}`
   );
 
-  console.log(projects);
-
   return (
     <section className="mx-3">
       <div className="flex flex-wrap justify-center items-center my-10">
