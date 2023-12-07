@@ -56,7 +56,7 @@ const Projects = () => {
         <Image
           src={floater1}
           alt="floater1"
-          className="absolute brightness-50 left-[60%] lg:left-[80%] top-[60%] lg:top-[50%] w-[95px] lg:w-[285px]"
+          className="absolute brightness-50 left-[60%] lg:left-[77%] top-[60%] lg:top-[49%] w-[95px] lg:w-[285px]"
         />
         <Image
           src={floater2}
@@ -66,7 +66,7 @@ const Projects = () => {
         <Image
           src={floater3}
           alt="floater3"
-          className="absolute brightness-50 left-[40%] lg:left-[80%] top-[25%] lg:top-[15%] w-[100px] lg:w-[300px]"
+          className="absolute brightness-50 left-[40%] lg:left-[72%] top-[25%] lg:top-[11%] w-[100px] lg:w-[300px]"
         />
         <Image
           src={floater4}
@@ -92,7 +92,7 @@ const Projects = () => {
         <Image
           src={floater7}
           alt="floater7"
-          className="absolute brightness-40 left-[19%] lg:left-[45%] top-[67%] lg:top-[50%] w-[100px] lg:w-[300px]"
+          className="absolute brightness-40 left-[19%] lg:left-[43%] top-[67%] lg:top-[50%] w-[100px] lg:w-[300px]"
         />
       </div>
       <div
@@ -103,17 +103,17 @@ const Projects = () => {
         <Image
           src={floater8}
           alt="floater8"
-          className="absolute brightness-40 left-[0%] lg:left-[65%] top-[52%] lg:top-[70%] w-[95px] lg:w-[285px]"
+          className="absolute brightness-40 left-[0%] lg:left-[58%] top-[52%] lg:top-[58%] w-[95px] lg:w-[285px]"
         />
         <Image
           src={floater9}
           alt="floater9"
-          className="absolute brightness-40 -left-[7%] lg:left-[70%] top-[10%] lg:top-[35%] w-[100px] lg:w-[300px]"
+          className="absolute brightness-40 -left-[7%] lg:left-[65%] top-[10%] lg:top-[35%] w-[100px] lg:w-[300px]"
         />
         <Image
           src={floater10}
           alt="floater10"
-          className="absolute brightness-40 left-[40%] lg:left-[15%] top-[11%] lg:top-[10%] w-[90px] lg:w-[275px]"
+          className="absolute brightness-40 left-[40%] lg:left-[15%] top-[11%] lg:top-[12%] w-[90px] lg:w-[275px]"
         />
       </div>
       <div className="absolute top-[45%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex flex-col justify-center items-center">
