@@ -6,7 +6,8 @@ import { groq } from "next-sanity";
 
 const page = async () => {
   const projects = await client.fetch(
-    groq`*[_type == 'project']{ _id, name, description, slug}`
+    groq`*[_type == 'project']{ _id, name, description, slug}`,
+    { cache: "no-store" }
   );
 
   return (
