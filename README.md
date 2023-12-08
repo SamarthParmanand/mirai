@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mirai Design Studio 
 
-## Getting Started
+Hey there! 👋 Welcome to the Mirai Design Studio's dev repository.
 
-First, run the development server:
+## Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Mirai Design Studio is an architectural venture based in Nagpur, Maharashtra, led by Ar. Harshal Thaware. This repository documents the development process, showcasing the creative collaboration between the studio and our development team.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Next.js:** The project leverages Next.js, a powerful React framework, to ensure a fast and efficient web application.
+- **Sanity CMS:** Content management is handled seamlessly with Sanity, making it easy to manage and update project content.
+- **Tailwind CSS:** The styling is crafted with Tailwind CSS, offering a utility-first approach for a sleek and responsive design.
+- **GSAP (GreenSock Animation Platform):** GSAP adds stunning animations and interactivity to enhance the user experience.
+- **Vercel:** The project is deployed on Vercel, ensuring seamless hosting, continuous deployment, and scalability.
+- **Shadcn UI:** UI components from Shadcn UI add a touch of elegance and consistency to the project's design.
+- **Locomotive Scroll (Lenis Smooth Scroll):** Smooth scrolling is achieved with Locomotive Scroll, enhancing the overall navigation experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### Copyright License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project and its associated files are protected by copyright law. All rights are reserved to the respective owners and contributors. Unauthorized use, reproduction, or distribution of any part of this project without the explicit written consent of the copyright owner is strictly prohibited.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The project includes, but is not limited to, source code, design elements, images, documentation, and any other assets associated with the project.
 
-## Deploy on Vercel
+Mirai Design Studio and the project developer, Samaerth Parmanand, reserve the right to take legal action against any party or individual who engages in unauthorized use, reproduction, or distribution of this project.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For inquiries regarding the use or licensing of this project, please contact 
+Ar. Harshal Thaware
+_contact info soon to be made available_
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thank you for respecting intellectual property rights.
+
+Samarth Parmanand
+parmanadsamarth@gmail.com
+
+---
+
+####Reach Mirai Design Studio
+<a href="https://www.instagram.com/mirai_designstudio/">Instagram</a>
+<a href="https://www.facebook.com/Miraidesignstudio">Facebook</a>
