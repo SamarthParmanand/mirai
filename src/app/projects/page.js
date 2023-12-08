@@ -14,8 +14,10 @@ const page = async () => {
     <section className="mx-3">
       <div className="flex flex-wrap justify-center items-center my-10">
         {projects.map((project) => (
+          <>
+          <div className="w-full md:w-1/3 lg:w-1/3 h-[100%] lg:h-60 m-3 bg-gradient-to-br from-gray-50 to-neutral-400 scale-75">
           <Card
-            className="w-full md:w-1/3 lg:w-1/3 h-[100%] lg:h-60 m-3 flex flex-col p-2 bg-gray-200"
+            className="h-[100%] lg:h-60 flex flex-col mx-5 p-2 backdrop-blur-2xl bg-blur scale-115 text-black"
             key={project._id}
           >
             <CardTitle className="text-center my-4">{project.name}</CardTitle>
@@ -28,6 +30,8 @@ const page = async () => {
               </Link>
             </CardFooter>
           </Card>
+          </div>
+          </>
         ))}
       </div>
     </section>

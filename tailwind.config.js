@@ -24,6 +24,11 @@ module.exports = {
         "extra-loose": "2.5",
         12: "3rem",
       },
+      scale: {
+        80: ".8",
+        85: ".85",
+        115: "1.15",
+      },
       brightness: {
         25: '.25',
         30: '.3',

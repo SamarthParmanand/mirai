@@ -3,7 +3,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Josefin_Sans } from "next/font/google";
 import gsap from "gsap";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import ScrollTrigger from "gsap-trial/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 import {
   Sheet,
@@ -23,6 +26,8 @@ const josefin = Josefin_Sans({
 
 const NavBar = () => {
   const pathname = usePathname();
+  const sheetTriggerRef = useRef(null);
+  const sheetContentRef = useRef(null);
   useEffect(() => {
     if (pathname === "/" || pathname.startsWith("/projects")) {
       gsap.fromTo(
@@ -53,6 +58,30 @@ const NavBar = () => {
     }
   }, [pathname]);
 
+  useEffect(() => {
+    if (sheetTriggerRef.current) {
+      ScrollTrigger.observe({
+        target: sheetTriggerRef.current,
+        type: "touch,click",
+        onClick: () => {
+          console.log("clickings");
+          gsap.fromTo(
+            sheetContentRef.current,
+            {
+              opacity: 0,
+              y: 50,
+              duration: 9
+            },
+            {
+              opacity: 1,
+              y: 0,
+              stagger: 0.1,
+            }
+          );
+        },
+      });
+    }
+  }, [sheetTriggerRef]);
 
   if (pathname.startsWith("/studio")) {
     return null;
@@ -74,19 +103,18 @@ const NavBar = () => {
             </span>
           </Link>
           <Sheet className="flex flex-col md:hidden lg:hidden">
-            <SheetTrigger asChild>
-              <button
-                type="button"
-                className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden md:hidden"
-              >
-                <Menu className="text-white" />
-              </button>
+            <SheetTrigger
+              id="sheet-trigger"
+              ref={sheetTriggerRef}
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden md:hidden"
+            >
+              <Menu className="text-white" />
             </SheetTrigger>
-            <SheetContent className="bg-black w-72">
+            <SheetContent className="bg-black w-72" ref={sheetContentRef}>
               <SheetHeader className="text-gray-300 text-xl my-8">
                 Quick Links
               </SheetHeader>
-              <div>
+              <div >
                 <div className="block py-2 px-3 text-white text-xl sheet-links">
                   <Link href="">Home</Link>
                 </div>
@@ -109,7 +137,7 @@ const NavBar = () => {
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
               <li className="link-elements">
                 <Link
-                  href="#"
+                  href="/"
                   className="block py-2 px-3 text-white"
                   aria-current="page"
                 >
