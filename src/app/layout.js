@@ -1,5 +1,6 @@
 import './globals.css'
 import NavBar from '@/components/NavBar'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   title: 'Mirai Design Studio',
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body className={`font-seasons`} suppressHydrationWarning={true}>
         <NavBar />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   )
