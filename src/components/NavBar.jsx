@@ -29,7 +29,7 @@ const NavBar = () => {
   const sheetTriggerRef = useRef(null);
   const sheetContentRef = useRef(null);
   useEffect(() => {
-    if (pathname === "/" || pathname.startsWith("/projects")) {
+    if (pathname === "/" || pathname.endsWith("/projects")) {
       gsap.fromTo(
         "#navbar",
         {

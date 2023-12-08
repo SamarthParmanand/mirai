@@ -6,7 +6,7 @@ import { groq } from "next-sanity";
 
 const page = async () => {
   const projects = await client.fetch(
-    groq`*[_type == 'project']{ _id, name, description, slug}`,
+    groq`*[_type == 'project'] | order(_createdAt desc) { _id, name, description, slug}`,
     { cache: "no-store" }
   );
 
@@ -15,9 +15,9 @@ const page = async () => {
       <div className="flex flex-wrap justify-center items-center my-10">
         {projects.map((project) => (
           <>
-          <div className="w-full md:w-1/3 lg:w-1/3 h-[100%] lg:h-60 m-3 bg-gradient-to-br from-gray-50 to-neutral-400 scale-75">
+          <div className="w-full md:w-1/3 lg:w-1/4 h-[100%] lg:h-60 m-3 bg-gradient-to-br from-zinc-50 to-gray-50 scale-90 card-holder shadow-2xl shadow-white">
           <Card
-            className="h-[100%] lg:h-60 flex flex-col mx-5 p-2 backdrop-blur-2xl bg-blur scale-115 text-black"
+            className="h-[100%] text-black lg:h-60 flex flex-col mx-5 p-2 backdrop-blur-2xl bg-blur scale-110 lg:scale-110 border-0" 
             key={project._id}
           >
             <CardTitle className="text-center my-4">{project.name}</CardTitle>

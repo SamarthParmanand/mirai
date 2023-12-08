@@ -11,12 +11,12 @@ const Image = ({ img }) => {
       let tween = gsap.fromTo(
         ".anim-images",
         { x: -250, y: 150, opacity: 0, display: 'block' },
-        { x: 0, y: 0, opacity: 1, stagger: 0.35 }
+        { x: 0, y: 0, opacity: 1, stagger: 0.25 }
       );
       tween.play();
     };
 
-    const delayTimeout = setTimeout(delayedAnimation, 500);
+    const delayTimeout = setTimeout(delayedAnimation, 250);
 
     return () => clearTimeout(delayTimeout);
   }, []);

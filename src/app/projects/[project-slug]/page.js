@@ -15,10 +15,10 @@ import { urlForImage } from "@sanity/lib/image";
 const ImageWithDialog = ({ img, index }) => (
   <Dialog>
     <DialogTrigger>
-      <Image img={img} alt={`Project Showcase Image ${index}`} />
+      <Image img={img} alt={`Project Showcase Image ${index}`}/>
     </DialogTrigger>
-    <DialogContent className="h-[90vh] w-[90vw] backdrop-blur-3xl bg-black/75 flex flex-col justify-center p-2">
-      <img src={`${urlForImage(img).url()}`} className="h-full object-cover" />
+    <DialogContent className="h-[85vh] lg:h-[90vh] w-[95vw] lg:w-[max-content] backdrop-blur-3xl bg-black/75 flex flex-col justify-center p-2">
+      <img src={`${urlForImage(img).url()}`} className="h-full object-contain lg:object-cover" />
       <DialogClose className="bg-black rounded-lg h-14 text-white">
         Close
       </DialogClose>

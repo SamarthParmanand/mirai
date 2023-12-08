@@ -125,9 +125,9 @@ const Projects = () => {
             Showcase
           </span>
         </h1>
-        <button className="h-8 w-24 lg:h-16 lg:w-40 text-black bg-white rounded-md m-2 lg:m-5 text-sm lg:text-xl">
-          <Link href="/projects">View More</Link>
-        </button>
+        <Link href="/projects" className="h-8 w-24 lg:h-16 lg:w-40 text-black bg-white rounded-md m-2 lg:m-5 text-sm lg:text-xl flex justify-center items-center">
+            Visit
+        </Link>
       </div>
     </div>
   );
