@@ -14,12 +14,10 @@ Mirai Design Studio is an architectural venture based in Nagpur, Maharashtra, le
 - **GSAP (GreenSock Animation Platform):** GSAP adds stunning animations and interactivity to enhance the user experience.
 - **Vercel:** The project is deployed on Vercel, ensuring seamless hosting, continuous deployment, and scalability.
 - **Shadcn UI:** UI components from Shadcn UI add a touch of elegance and consistency to the project's design.
-- **Locomotive Scroll (Lenis Smooth Scroll):** Smooth scrolling is achieved with Locomotive Scroll, enhancing the overall navigation experience.
+- **Lenis Smooth Scroll:** Smooth scrolling is achieved with Lenis Scroll, enhancing the overall navigation experience.
 
 
----
-
-### Copyright License
+## Copyright License
 
 This project and its associated files are protected by copyright law. All rights are reserved to the respective owners and contributors. Unauthorized use, reproduction, or distribution of any part of this project without the explicit written consent of the copyright owner is strictly prohibited.
 
@@ -33,11 +31,11 @@ _contact info soon to be made available_
 
 Thank you for respecting intellectual property rights.
 
-Samarth Parmanand
+Samarth Parmanand <br>
 parmanadsamarth@gmail.com
 
 ---
 
-####Reach Mirai Design Studio
+#### Reach Mirai Design Studio
 <a href="https://www.instagram.com/mirai_designstudio/">Instagram</a>
 <a href="https://www.facebook.com/Miraidesignstudio">Facebook</a>
