@@ -6,16 +6,16 @@ import gsap from "gsap";
 import { cn } from "@/lib/utils";
 
 const Card = React.forwardRef(({ className, ...props }, ref) => {
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
   gsap.fromTo('.card-holder', {
     duration: 1,
     y: -100,
     opacity: 0,
-    scale: 0.5,
+    scale: 0.6,
     ease: "power4.inOut",
   }, {
     y: 0,
-    scale: 0.75,
+    scale: 0.85,
     opacity: 1,
     duration: 0.6,
 })

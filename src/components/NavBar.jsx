@@ -29,7 +29,7 @@ const NavBar = () => {
   const sheetTriggerRef = useRef(null);
   const sheetContentRef = useRef(null);
   useEffect(() => {
-    if (pathname === "/" || pathname.endsWith("/projects")) {
+    if (pathname === "/") {
       gsap.fromTo(
         "#navbar",
         {
@@ -52,6 +52,59 @@ const NavBar = () => {
           opacity: 1,
           y: 0,
           duration: 1.25,
+          stagger: { amount: 0.35 },
+        }
+      );
+    }else if (pathname.endsWith("/projects")) {
+      gsap.fromTo(
+        "#navbar",
+        {
+          opacity: 0,
+          y: -200,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+        }
+      );
+      gsap.fromTo(
+        ".link-elements",
+        {
+          opacity: 0,
+          y: -200,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.75,
+          stagger: { amount: 0.1 },
+        }
+      );
+    }
+    else if (pathname.startsWith("/projects/")) {
+      gsap.fromTo(
+        "#navbar",
+        {
+          opacity: 0,
+          y: -200,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+        }
+      );
+      gsap.fromTo(
+        ".link-elements",
+        {
+          opacity: 0,
+          y: -200,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
           stagger: { amount: 0.35 },
         }
       );

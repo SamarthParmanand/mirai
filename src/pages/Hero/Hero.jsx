@@ -24,7 +24,6 @@ const Hero = () => {
   }, []);
 
   return (
-    <>
       <div
         id="hero-section"
         className={`${classes.heroBG} flex flex-col lg:flex-row md:flex-row justify-center items-center relative text-white`}
@@ -50,7 +49,6 @@ const Hero = () => {
           Destiny
         </span>
       </div>
-    </>
   );
 };
 
